@@ -1,0 +1,87 @@
+body {
+top: 0;
+width: 100%;
+height: 100%;
+background: rgba(0,0,0,0.6);
+display: flex;
+align-items: center;
+justify-content: center;
+z-index: 9999;
+}
+
+
+.popup-box {
+background: #1a1a1d;
+padding: 25px;
+border-radius: 12px;
+text-align: center;
+width: 280px;
+box-shadow: 0 0 15px rgba(255,255,255,0.1);
+animation: pop .15s ease;
+}
+
+
+@keyframes pop {
+from { transform: scale(0.8); opacity: 0; }
+to { transform: scale(1); opacity: 1; }
+}
+
+
+.popup-box p {
+margin-bottom: 20px;
+color: #eee;
+font-size: 18px;
+}
+
+
+.popup-btns {
+display: flex;
+justify-content: space-between;
+gap: 10px;
+}
+
+
+.popup-btns button {
+padding: 10px 15px;
+border: none;
+border-radius: 8px;
+cursor: pointer;
+font-size: 14px;
+font-weight: bold;
+}
+
+
+#okBtn { background: #2a7f2a; color: #fff; }
+#cancelBtn { background: #8a1e1e; color: #fff; }
+
+
+/* RESPONSIVIDADE */
+@media (max-width: 900px) {
+.numero {
+font-size: 20px;
+padding: 16px;
+}
+}
+
+
+@media (max-width: 600px) {
+.numero {
+font-size: 18px;
+padding: 14px;
+}
+h1 {
+font-size: 22px;
+}
+}
+
+
+@media (max-width: 400px) {
+.numero {
+font-size: 16px;
+padding: 12px;
+}
+.grid {
+gap: 8px;
+padding: 12px;
+}
+}
